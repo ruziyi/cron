@@ -1,0 +1,16 @@
+[Unit]
+Description=ycron
+
+[Service]
+Type=simple
+# 程序执行的目录
+WorkingDirectory=/www/server/ycron
+# 启动的脚本命令
+ExecStart=/www/server/ycron/ycron
+# 重启条件
+Restart=always
+# 几秒后重启
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

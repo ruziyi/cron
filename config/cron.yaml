@@ -1,0 +1,6 @@
+tasks:
+  - name: contract
+    cron:
+      pattern: "* * * * * *"
+      command: "php D:\\laragon\\www\\taian\\artisan app:test"
+      enable: true

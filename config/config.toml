@@ -1,0 +1,16 @@
+[logger]
+ctxKeys = [] # 自定义Context上下文变量名称，自动打印Context的变量到日志中。默认为空 
+file = "{Y-m-d}.log" # 日志文件格式。默认为"{Y-m-d}.log"
+header = true # 是否打印日志的头信息。默认true
+level = "all" # 日志输出级别
+path = "./logs" # 日志文件路径。默认为空，表示关闭，仅输出到终端
+prefix = "" # 日志内容输出前缀。默认为空
+rotateBackupCompress = 0 # 滚动切分文件的压缩比（0-9）。默认为0，表示不压缩
+rotateBackupExpire = "30d" # 按照切分的文件有效期清理切分文件，当滚动切分特性开启时有效。默认为0，表示不备份，切分则删除
+rotateBackupLimit = 100 # 按照切分的文件数量清理切分文件，当滚动切分特性开启时有效。默认为0，表示不备份，切分则删除
+rotateCheckInterval = "1h" # 滚动切分的时间检测间隔，一般不需要设置。默认为1小时
+rotateExpire = "1d" # 按照日志文件时间间隔对文件滚动切分。默认为0，表示关闭滚动切分特性
+rotateSize = "30M" # 按照日志文件大小对文件进行滚动切分。默认为0，表示关闭滚动切分特性
+stdout = false # 日志是否同时输出到终端。默认true
+stdoutColorDisabled = false # 关闭终端的颜色打印。默认开启
+writerColorEnable = false # 日志文件是否带上颜色。默认false，表示不带颜色
